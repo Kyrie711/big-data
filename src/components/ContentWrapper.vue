@@ -18,7 +18,7 @@ const urlList = computed(() => {
         :src="urlList[0]"
         :zoom-rate="1.2"
         :preview-src-list="urlList"
-        :initial-index="4"
+        :initial-index="0"
         fit="cover"
         style="margin-right: 20px"
       />
@@ -29,7 +29,7 @@ const urlList = computed(() => {
         :src="urlList[1]"
         :zoom-rate="1.2"
         :preview-src-list="urlList"
-        :initial-index="4"
+        :initial-index="1"
         fit="cover"
       />
     </div>
