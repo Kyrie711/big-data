@@ -49,7 +49,6 @@ const urlList = computed(() => {
 
 <style scoped lang="less">
 .content-wrapper {
-  margin-right: 200px;
   display: flex;
   justify-content: center;
   flex: 1;
