@@ -5,7 +5,8 @@ import { computed } from 'vue'
 const urlList = computed(() => {
   return [
     `http://49.235.88.50:8989/images/data/c${props.selectedIndex + 1}.png`,
-    `http://49.235.88.50:8989/images/model/c${props.selectedIndex + 1}.png`
+    `http://49.235.88.50:8989/images/model/c${props.selectedIndex + 1}.png`,
+    `http://49.235.88.50:8989/images/enhance/c${props.selectedIndex + 1}.png`
   ]
 })
 </script>
@@ -33,6 +34,16 @@ const urlList = computed(() => {
         fit="cover"
       />
     </div>
+    <div class="content-item">
+      <span>增强后的结果</span>
+      <el-image
+        :src="urlList[2]"
+        :zoom-rate="1.2"
+        :preview-src-list="urlList"
+        :initial-index="2"
+        fit="cover"
+      />
+    </div>
   </div>
 </template>
 
@@ -45,7 +56,7 @@ const urlList = computed(() => {
   padding: 0 80px;
 
   .content-item {
-    width: 50%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
