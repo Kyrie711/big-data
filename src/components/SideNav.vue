@@ -20,7 +20,7 @@ defineProps(['selectedIndex'])
 .side-nav-wrapper {
   width: 200px;
   color: var(--el-color-primary);
-  margin-left: 200px;
+  margin-left: 100px;
 }
 .scrollbar-demo-item {
   display: flex;
